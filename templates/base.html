@@ -9,13 +9,15 @@
     <link rel="icon" sizes="192x192" href="{{ config.base_url }}/icon.png" />
     <link rel="stylesheet" href="{{ config.base_url }}/styles.css" />
 
-    <title>Phy F.R.Y.'s (faulty) Blog</title>
+    <title>{% if page.title is defined %}{{ page.title }} - {% endif %}Phy F.R.Y.'s (faulty) Blog</title>
+    {% if page.description is defined %}<meta name="description" content="{{ page.description }}" />{% endif %}
+    {% if page.title is defined %}<meta property="og:title" content="{{ page.title }}" />{% endif %}
   </head>
   <body>
     <header>
         <a class="headlink" href="{{ config.base_url }}">Phy F.R.Y.'s (faulty & temporary) Blog</a>
     </header>
-    <div class="notice"><p>This site is currently looking atrocious on purpose. I am plannig to create a theme from scratch but I am lacking "inspiration", and I wanted to start writing some posts.</p></div>
+    <div class="notice"><p>This site is currently looking atrocious on purpose. I am planning to create a theme from scratch but I am lacking "inspiration", and I wanted to start writing some posts.</p></div>
     <section class="section">
       <div class="container">{% block content %} {% endblock content %}</div>
     </section>

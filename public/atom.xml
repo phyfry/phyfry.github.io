@@ -24,12 +24,6 @@
         
         <content type="html" xml:base="https://phyfry.github.io/blog/nixos-simple-module/">&lt;!-- Petit résumé de quelques heures de bidoullage avec NixOS que j&#x27;ai récement streamé.
 (Pas la peine de les regarder, ils ne sont pas très intéressant) --&gt;
-&lt;div style=&quot;margin-left:auto;margin-right:auto;width:880px;&quot;&gt;
-&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;vPJnFx06V6I&quot;&gt;
-&lt;&#x2F;iframe&gt;
-&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;1nUddDkvuBQ&quot;&gt;
-&lt;&#x2F;iframe&gt;
-&lt;&#x2F;div&gt;
 &lt;h2 id=&quot;todo&quot;&gt;TODO&lt;&#x2F;h2&gt;
 &lt;p class=&quot;filename&quot;&gt;&lt;code&gt;flake.nix&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
 &lt;pre class=&quot;giallo&quot; style=&quot;color: #CDD6F4; background-color: #1E1E2E;&quot;&gt;&lt;code data-lang=&quot;nix&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #9399B2;&quot;&gt;{&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
@@ -49,7 +43,14 @@
 &lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #9399B2;&quot;&gt;        ];&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
 &lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #9399B2;&quot;&gt;      };&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
 &lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #9399B2;&quot;&gt;    };&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
-&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #9399B2;&quot;&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #9399B2;&quot;&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;streams-archive&quot;&gt;Streams Archive&lt;&#x2F;h2&gt;
+&lt;div style=&quot;margin-left:auto;margin-right:auto;width:880px;&quot;&gt;
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;vPJnFx06V6I&quot;&gt;
+&lt;&#x2F;iframe&gt;
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;1nUddDkvuBQ&quot;&gt;
+&lt;&#x2F;iframe&gt;
+&lt;&#x2F;div&gt;
+</content>
         
     </entry>
 </feed>
