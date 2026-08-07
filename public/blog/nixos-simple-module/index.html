@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="self" type="application/atom+xml" href="https:&#x2F;&#x2F;phyfry.github.io/atom.xml" />
+    <link rel="alternate" href="https:&#x2F;&#x2F;phyfry.github.io/atom.xml" type="application/atom+xml" title="feeds" />
+    <link rel="icon" sizes="192x192" href="https:&#x2F;&#x2F;phyfry.github.io/icon.png" />
+    <link rel="stylesheet" href="https:&#x2F;&#x2F;phyfry.github.io/styles.css" />
+
+    <title>Phy F.R.Y.'s (faulty) Blog</title>
+  </head>
+  <body>
+    <header>
+        <a class="headlink" href="https:&#x2F;&#x2F;phyfry.github.io">Phy F.R.Y.'s (faulty & temporary) Blog</a>
+    </header>
+    <div class="notice"><p>This site is currently looking atrocious on purpose. I am plannig to create a theme from scratch but I am lacking "inspiration", and I wanted to start writing some posts.</p></div>
+    <section class="section">
+      <div class="container">
+<article>
+<h1 class="title">
+    Modularazing NixOS configuration was simplier than expected
+</h1>
+<p class="subtitle"><strong>2026-08-07</strong></p>
+</article>
+<!-- Petit résumé de quelques heures de bidoullage avec NixOS que j'ai récement streamé.
+(Pas la peine de les regarder, ils ne sont pas très intéressant) -->
+<div style="margin-left:auto;margin-right:auto;width:880px;">
+<iframe width="420" height="315" src="https://www.youtube.com/embed/vPJnFx06V6I">
+</iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/1nUddDkvuBQ">
+</iframe>
+</div>
+<h2 id="todo">TODO</h2>
+<p class="filename"><code>flake.nix</code></p>
+<pre class="giallo" style="color: #CDD6F4; background-color: #1E1E2E;"><code data-lang="nix"><span class="giallo-l"><span style="color: #9399B2;">{</span></span>
+<span class="giallo-l"><span style="color: #89B4FA;">  inputs</span><span style="color: #94E2D5;"> =</span><span style="color: #9399B2;"> {</span></span>
+<span class="giallo-l"><span style="color: #89B4FA;">    nixpkgs</span><span>.</span><span style="color: #89B4FA;">url</span><span style="color: #94E2D5;"> =</span><span style="color: #A6E3A1;"> &quot;github:NixOS/nixpkgs/nixos-26.05&quot;</span><span style="color: #9399B2;">;</span></span>
+<span class="giallo-l"><span style="color: #9399B2;">  };</span></span>
+<span class="giallo-l"><span style="color: #89B4FA;">  outputs</span><span style="color: #94E2D5;"> =</span></span>
+<span class="giallo-l"><span style="color: #EBA0AC;font-style: italic;">    inputs</span><span>@</span><span style="color: #9399B2;">{</span><span style="color: #EBA0AC;font-style: italic;"> self</span><span style="color: #94E2D5;">,</span><span style="color: #EBA0AC;font-style: italic;"> nixpkgs</span><span style="color: #94E2D5;">, ...</span><span style="color: #9399B2;"> }:</span></span>
+<span class="giallo-l"><span style="color: #9399B2;">    {</span></span>
+<span class="giallo-l"><span style="color: #89B4FA;">      nixosConfigurations</span><span>.</span><span style="color: #89B4FA;">homeserver</span><span style="color: #94E2D5;"> =</span><span> nixpkgs</span><span style="color: #94E2D5;">.</span><span>lib</span><span style="color: #94E2D5;">.</span><span>nixosSystem</span><span style="color: #9399B2;"> {</span></span>
+<span class="giallo-l"><span style="color: #89B4FA;">        system</span><span style="color: #94E2D5;"> =</span><span style="color: #A6E3A1;"> &quot;x86_64-linux&quot;</span><span style="color: #9399B2;">;</span></span>
+<span class="giallo-l"><span style="color: #89B4FA;">        modules</span><span style="color: #94E2D5;"> =</span><span style="color: #9399B2;"> [</span></span>
+<span class="giallo-l"><span style="color: #F5C2E7;">          ./configuration.nix</span></span>
+<span class="giallo-l"><span style="color: #F5C2E7;">          ./hardware-configuration.nix</span></span>
+<span class="giallo-l"><span style="color: #F5C2E7;">          ./container-service1.nix</span></span>
+<span class="giallo-l"><span style="color: #F5C2E7;">          ./container-service2.nix</span></span>
+<span class="giallo-l"><span style="color: #9399B2;">        ];</span></span>
+<span class="giallo-l"><span style="color: #9399B2;">      };</span></span>
+<span class="giallo-l"><span style="color: #9399B2;">    };</span></span>
+<span class="giallo-l"><span style="color: #9399B2;">}</span></span></code></pre>
+</div>
+    </section>
+    <footer></footer>
+  </body>
+</html>
